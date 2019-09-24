@@ -1,0 +1,5 @@
+#!/bin/sh
+
+docker build -t $IMAGE_NAME \
+--build-arg RBENV_VERSION=$RBENV_VERSION \
+--build-arg RUBY_VERSION=$SOURCE_BRANCH .
